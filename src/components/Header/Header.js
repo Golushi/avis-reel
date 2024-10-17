@@ -2,7 +2,7 @@
 import React from "react";
 
 const Header = () => {
-  return <header>Avis Réel test</header>;
+  return <header>Avis Réel</header>;
 };
 
 export default Header;
