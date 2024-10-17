@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Avis Réel",
+  "name": "Avis Réel - Plateforme d'avis clients",
   "icons": [
     {
       "src": "favicon.ico",
