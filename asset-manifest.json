@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/avis-reel/static/css/main.e6c13ad2.css",
+    "main.js": "/avis-reel/static/js/main.a4faccc5.js",
+    "index.html": "/avis-reel/index.html",
+    "main.e6c13ad2.css.map": "/avis-reel/static/css/main.e6c13ad2.css.map",
+    "main.a4faccc5.js.map": "/avis-reel/static/js/main.a4faccc5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.a4faccc5.js"
+  ]
+}
