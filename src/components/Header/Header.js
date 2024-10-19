@@ -31,8 +31,8 @@ const Header = () => {
         className="absolute top-0 left-0 w-full h-1/2 bg-cover bg-center"
         style={{
           backgroundImage: `url(${getBackgroundImage()})`,
-          backgroundSize: "cover", // Ajuste l'image pour couvrir sans déborder
-          backgroundRepeat: "no-repeat", // Empêche la répétition
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
         }}
       ></div>
 
@@ -45,40 +45,41 @@ const Header = () => {
         {/* Colonne 2 : Texte et menu */}
         <div className="flex flex-col justify-start items-start ml-2 flex-grow">
           <h1 className="text-right font-lobster flex flex-col sm:flex-row sm:items-center">
-            <span className="text-vert text-lg sm:text-xl md:text-xl lg:text-xl font-bold mr-1">
+            <span className="text-vert text-sm sm:text-xl md:text-xl lg:text-xl font-bold mr-1">
               1er Site de France avec des
             </span>
-            <span className="text-white text-lg sm:text-xl md:text-xl lg:text-xl font-bold">
+            <span className="text-white text-sm sm:text-xl md:text-xl lg:text-xl font-bold">
               Avis Garantis 100% Réels
             </span>
           </h1>
 
           {/* Menu sous le texte, avec un peu plus de marge en haut */}
           <nav className={`mt-4 ${isMenuOpen ? "block" : "hidden"} md:block`}>
-            <ul className="flex justify-center space-x-4">
+            <ul
+              className={`flex-col space-y-2 bg-[#00ABC7] p-4 ${
+                isMenuOpen ? "flex" : "hidden"
+              } md:flex`}
+            >
               <li>
-                <a href="/" className="text-white hover:text-yellow-400">
+                <a href="/" className="text-white hover:text-vert">
                   Accueil
                 </a>
               </li>
               <li>
                 <a
                   href="/qui-sommes-nous"
-                  className="text-white hover:text-yellow-400"
+                  className="text-white hover:text-vert"
                 >
                   Qui Sommes-Nous
                 </a>
               </li>
               <li>
-                <a href="/contact" className="text-white hover:text-yellow-400">
+                <a href="/contact" className="text-white hover:text-vert">
                   Contact
                 </a>
               </li>
               <li>
-                <a
-                  href="/inscrire"
-                  className="text-white hover:text-yellow-400"
-                >
+                <a href="/inscrire" className="text-white hover:text-vert">
                   Inscrire Mon Etablissement
                 </a>
               </li>
@@ -87,7 +88,7 @@ const Header = () => {
         </div>
 
         {/* Colonne 3 : Bouton burger */}
-        <div className="absolute top-0 right-0 mt-4 mr-4">
+        <div className="absolute top-0 right-0 mt-10 mr-4">
           {/* Bouton burger pour mobile */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -101,12 +102,9 @@ const Header = () => {
                 </span>
               ) : (
                 <div className="flex flex-col justify-between h-6">
-                  <span className="block w-8 h-1 bg-white"></span>{" "}
-                  {/* Barre 1 */}
-                  <span className="block w-8 h-1 bg-white"></span>{" "}
-                  {/* Barre 2 */}
-                  <span className="block w-8 h-1 bg-white"></span>{" "}
-                  {/* Barre 3 */}
+                  <span className="block w-8 h-1 bg-white"></span>
+                  <span className="block w-8 h-1 bg-white"></span>
+                  <span className="block w-8 h-1 bg-white"></span>
                 </div>
               )}
             </span>
