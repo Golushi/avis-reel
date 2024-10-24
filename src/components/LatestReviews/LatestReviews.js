@@ -28,7 +28,9 @@ const LatestReviews = () => {
 
   return (
     <section className="bg-gray-100 p-8 flex flex-col items-center">
-      <h2 className="text-xl font-bold mb-4">Derniers Avis</h2>
+      <h2 className="text-xl font-bold font-lobster mb-4">
+        Derniers Avis déposés
+      </h2>
       {reviews.length > 0 ? (
         <ul className="flex flex-col items-center">
           {reviews.map((review) => (
