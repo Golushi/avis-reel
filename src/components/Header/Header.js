@@ -55,6 +55,7 @@ const Header = () => {
             className={`mt-4 ${
               isMenuOpen ? "block" : "hidden"
             } md:flex md:items-center md:justify-between md:w-full`}
+            style={{ zIndex: 50 }} // Ajout du z-index ici
           >
             <ul
               className={`flex-col space-y-2 bg-[#00ABC7] p-4 md:flex md:flex-row md:space-y-0 md:space-x-4`}
@@ -84,7 +85,9 @@ const Header = () => {
         </div>
 
         {/* Bouton burger */}
-        <div className="absolute top-0 right-0 mt-10 mr-4">
+        <div className="absolute top-0 right-0 mt-10 mr-4 z-50">
+          {" "}
+          {/* Assurez-vous que le z-index est ici */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className="md:hidden text-white px-4 py-2 rounded"
