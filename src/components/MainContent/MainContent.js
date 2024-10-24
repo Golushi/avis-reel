@@ -8,9 +8,9 @@ const MainContent = () => {
   const [isHoveringRight, setIsHoveringRight] = useState(false);
 
   return (
-    <div className="flex justify-center gap-8 items-start h-[75vh] p-4">
+    <div className="flex flex-col md:flex-row justify-center items-center gap-8 h-[75vh] p-4 mx-auto">
       {/* Rectangle gauche */}
-      <div className="w-[280px] h-[340px] bg-bleu p-8 text-white relative flex flex-col justify-between rounded-xl">
+      <div className="w-[280px] h-[360px] bg-bleu p-8 text-white relative flex flex-col justify-between rounded-xl">
         <h2 className="text-2xl font-lobster text-black font-bold mb-4">
           Donnez votre avis
         </h2>
@@ -37,7 +37,7 @@ const MainContent = () => {
       </div>
 
       {/* Rectangle droit */}
-      <div className="w-[280px] h-[340px] bg-vert p-8 text-white relative flex flex-col justify-between rounded-xl">
+      <div className="w-[280px] h-[360px] bg-vert p-8 text-white relative flex flex-col justify-between rounded-xl">
         <h2 className="text-2xl font-lobster text-black font-bold mb-4">
           Recherchez un Avis
         </h2>
