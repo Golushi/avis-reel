@@ -1,9 +1,14 @@
-import React from "react";
-import GoButtonImage from "../../assets/go_button.png"; // Assure-toi d'avoir ce fichier
+import React, { useState } from "react";
+import GoButtonImage from "../../assets/go_button.png";
+import GoButtonImageHover from "../../assets/go_button_hover.png"; // Assure-toi d'avoir ce fichier
 
 const MainContent = () => {
+  // Création de deux états pour les boutons gauche et droit
+  const [isHoveringLeft, setIsHoveringLeft] = useState(false);
+  const [isHoveringRight, setIsHoveringRight] = useState(false);
+
   return (
-    <div className="flex justify-center gap-8 items-start h-screen p-4">
+    <div className="flex justify-center gap-8 items-start h-[75vh] p-4">
       {/* Rectangle gauche */}
       <div className="w-[280px] h-[340px] bg-bleu p-8 text-white relative flex flex-col justify-between rounded-xl">
         <h2 className="text-2xl font-lobster text-black font-bold mb-4">
@@ -18,8 +23,16 @@ const MainContent = () => {
           className="w-full p-2 text-black mb-4"
           placeholder="Votre code"
         />
-        <button className="bg-transparent self-center">
-          <img src={GoButtonImage} alt="Go" className="w-24" />
+        <button
+          className="bg-transparent self-center"
+          onMouseEnter={() => setIsHoveringLeft(true)}
+          onMouseLeave={() => setIsHoveringLeft(false)}
+        >
+          <img
+            src={isHoveringLeft ? GoButtonImageHover : GoButtonImage}
+            alt="Go"
+            className="w-24"
+          />
         </button>
       </div>
 
@@ -46,8 +59,16 @@ const MainContent = () => {
           className="w-full p-2 text-black mb-4"
           placeholder="Lieu"
         />
-        <button className="bg-transparent self-center">
-          <img src={GoButtonImage} alt="Go" className="w-24" />
+        <button
+          className="bg-transparent self-center"
+          onMouseEnter={() => setIsHoveringRight(true)}
+          onMouseLeave={() => setIsHoveringRight(false)}
+        >
+          <img
+            src={isHoveringRight ? GoButtonImageHover : GoButtonImage}
+            alt="Go"
+            className="w-24"
+          />
         </button>
       </div>
     </div>

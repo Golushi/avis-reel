@@ -1,15 +1,16 @@
-// src/App.js
 import React from "react";
 import Header from "./components/Header/Header";
-import MainContent from "./components/MainContent/MainContent"; // Import du nouveau composant
+import MainContent from "./components/MainContent/MainContent";
+import LatestReviews from "./components/LatestReviews/LatestReviews";
+import Footer from "./components/Footer/Footer"; // Import du nouveau Footer
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <main>
-        <MainContent /> {/* Utilisation du composant MainContent */}
-      </main>
+      <MainContent />
+      <LatestReviews /> {/* Ajout de la section des derniers avis */}
+      <Footer />
     </div>
   );
 }
