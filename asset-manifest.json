@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/avis-reel/static/css/main.fcb09ace.css",
-    "main.js": "/avis-reel/static/js/main.158e4146.js",
+    "main.css": "/avis-reel/static/css/main.64caf3ac.css",
+    "main.js": "/avis-reel/static/js/main.3594b153.js",
     "static/media/logo512.png": "/avis-reel/static/media/logo512.7df5e5a5cc22f432a1c1.png",
     "static/media/img_bgHeader4.png": "/avis-reel/static/media/img_bgHeader4.3ffd61e8e6e787d2fcb3.png",
     "index.html": "/avis-reel/index.html",
-    "main.fcb09ace.css.map": "/avis-reel/static/css/main.fcb09ace.css.map",
-    "main.158e4146.js.map": "/avis-reel/static/js/main.158e4146.js.map"
+    "main.64caf3ac.css.map": "/avis-reel/static/css/main.64caf3ac.css.map",
+    "main.3594b153.js.map": "/avis-reel/static/js/main.3594b153.js.map"
   },
   "entrypoints": [
-    "static/css/main.fcb09ace.css",
-    "static/js/main.158e4146.js"
+    "static/css/main.64caf3ac.css",
+    "static/js/main.3594b153.js"
   ]
 }
