@@ -1,12 +1,15 @@
 // src/App.js
 import React from "react";
 import Header from "./components/Header/Header";
+import MainContent from "./components/MainContent/MainContent"; // Import du nouveau composant
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <main>Contenu principal en cours de construction</main>
+      <main>
+        <MainContent /> {/* Utilisation du composant MainContent */}
+      </main>
     </div>
   );
 }
